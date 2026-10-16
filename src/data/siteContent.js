@@ -1,0 +1,502 @@
+export const site = {
+  name: 'Climate Collective Pune Environmental Foundation',
+  fullName: 'Climate Collective Pune Environmental Foundation',
+  shortName: 'CCPEF',
+  tagline: 'Small Actions, Lasting Environmental Impact',
+  cin: 'DUMMY-CIN-000000',
+  location: 'Pune, Maharashtra',
+  phone: '+91 9000000000',
+  phoneHref: 'tel:+919000000000',
+  email: 'hello@example.com',
+  emailHref: 'mailto:hello@example.com',
+  office: '123 Green Avenue, Pune, Maharashtra, India',
+  previousOffice: '',
+  copyright: '© 2026 GreenFuture Foundation. All rights reserved.',
+};
+
+export const navLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'Vision & Mission', href: '#vision' },
+  { label: 'Our Focus', href: '#focus' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Leadership', href: '#leadership' },
+  { label: 'Events', href: '#events' },
+  { label: 'Contact', href: '#contact' },
+];
+
+
+export const hero = {
+  kicker: 'Accelerating Climate Action in Maharashtra',
+  titleLead: 'Greener Planet Through',
+  titleAccent: 'Collective Community Action',
+  description:
+    'Climate Collective Pune Environmental Foundation (CCPEF) is dedicated to systemic change in urban sustainability, groundwater replenishment, hill conservation, and grassroots community empowerment.',
+  primaryCta: {
+    label: 'Join Our Mission',
+    href: '#contact',
+  },
+  secondaryCta: {
+    label: 'Explore Our Work',
+    href: '#focus',
+  },
+  highlightTitle: 'Groundwater & Urban Ecology',
+  highlightText:
+    "Supporting Pune Municipal Corporation in India's first groundwater cell & hill protection.",
+  stats: [
+    { value: '34+ Yrs', label: 'Civic & Governance Experience' },
+    { value: '100K+', label: 'Ration Kits & Relief Distributed' },
+    { value: '280+', label: 'Farmers & Agro-Ecology Linkages' },
+  ],
+};
+
+
+export const partners = [
+  'Pune Municipal Corporation (PMC)',
+  'Pimpri Chinchwad Municipal Corporation (PCMC)',
+  'Pune Metropolitan Region Development Authority (PMRDA)',
+  'Parisar (Sustainable Mobility)',
+  'Mission Groundwater & ACWADAM',
+  'NSRCEL - IIM Bengaluru',
+  'Aundh Vikas Mandal',
+  'Baner Pashan Link Road Trust',
+  'Swach & Red Dot Movement',
+];
+
+export const about = {
+  kicker: 'Vision & Mission',
+  title: 'Guided by Vision, Driven by Collective Ground Action',
+  intro:
+    'At Climate Collective Pune Environmental Foundation, our conviction is rooted in systemic ecological change and empowering communities from climate anxiety into proactive stewardship.',
+  visionLabel: 'The North Star',
+  visionTitle: 'Our Vision',
+  visionQuote: '“Greener Planet Through Collective Community Action”',
+  visionText:
+    'To empower individuals, communities, and organizations to take united action for environmental sustainability by promoting eco-friendly practices, reducing waste, and conserving natural resources — building a greener, healthier, and resilient planet for future generations.',
+  pillarsTitle: 'Foundational Pillars:',
+  pillars: [
+    {
+      title: 'Community Synergy',
+      text: 'Uniting citizens, housing societies, and youth for collective ecological stewardship.',
+    },
+    {
+      title: 'Resource Conservation',
+      text: 'Reversing depletion across Pune’s groundwater aquifers and natural hill ecosystems.',
+    },
+    {
+      title: 'Intergenerational Legacy',
+      text: 'Building sustainable urban-rural ecosystems to safeguard our future.',
+    },
+  ],
+  missionLabel: 'The Action Engine',
+  missionTitle: 'Our Mission',
+  missionQuote: '“Fostering Systemic Change in Urban Sustainability & Livelihoods”',
+  missionText:
+    'Dedicated to accelerating impactful, scalable interventions across environmental systems. We bridge civic governance with citizen action, cultivating green entrepreneurship, climate education, and regenerative community models.',
+  matrixTitle: '9-Point Systemic Action Matrix:',
+  matrix: [
+    'Water Security',
+    'Food Security',
+    'Air Quality',
+    'Green Cover',
+    'Waste Reduction',
+    'Sustainable Mobility',
+    'Clean Energy',
+    'Green Livelihoods',
+    'Community Wellbeing',
+  ],
+  closingQuote:
+    '“Transforming climate anxiety into empowering collective stewardship.”',
+  closingText:
+    'Join hands with CCPEF to create tangible ecological impact across Maharashtra.',
+};
+
+export const pillars = {
+  kicker: 'Our Focus',
+  title: 'Our 6 Pillars of Ecological & Community Impact',
+  intro:
+    'From water security and hill preservation to psychosocial climate support and green livelihoods, we implement interconnected interventions for lasting change.',
+  items: [
+    {
+      id: 'groundwater',
+      tags: ['Conservation', 'Jalshakti Mission Aligned'],
+      title: 'Groundwater & Water Security',
+      text: "Pioneering community-level rainwater harvesting, aquifer mapping, and Pune's first Municipal Groundwater Cell.",
+      metrics: [
+        { value: '50+', label: 'Community Workshops' },
+        { value: "India's 1st PMC Cell", label: 'Aquifer Cells Supported' },
+        { value: 'Millions of Litres', label: 'Water Saved Annually' },
+      ],
+    },
+    {
+      id: 'hills',
+      tags: ['Biodiversity', 'Grassroots Movement'],
+      title: 'Urban Ecology & Hill Protection',
+      text: "Spearheading grassroots movements to protect Pune's hills, enforce the Tree Act, and build urban food forests.",
+      metrics: [
+        { value: '10,000+', label: 'Trees Advocated & Saved' },
+        { value: 'Vetal & Baner Hills', label: 'Hill Ecosystems Protected' },
+        { value: '1975 Act Active', label: 'Tree Act PMC Enforcements' },
+      ],
+    },
+    {
+      id: 'wellbeing',
+      tags: ['Community Wellbeing', 'Unique Psychosocial Hub'],
+      title: 'Climate & Mental Wellbeing',
+      text: "Hosting transformative 'Climate Emotions Circles' to address eco-anxiety, climate grief, and foster emotional resilience.",
+      metrics: [
+        { value: '30+', label: 'Emotion Circles Conducted' },
+        { value: '1,200+', label: 'Participants Supported' },
+        { value: 'Certified Framework', label: 'Psychology & Ethics Grounding' },
+      ],
+    },
+    {
+      id: 'mobility',
+      tags: ['Urban Planning', 'Parisar Collaboration'],
+      title: 'Sustainable Mobility & Civic Planning',
+      text: 'Conducting comprehensive ward-by-ward mobility surveys and campaigning for pedestrian safety & carbon neutrality.',
+      metrics: [
+        { value: 'All PMC Wards', label: 'Electoral Wards Surveyed' },
+        { value: 'Parisar', label: 'Partner Organization' },
+        { value: 'Footpaths & Public Transit', label: 'Focus Areas' },
+      ],
+    },
+    {
+      id: 'waste',
+      tags: ['Zero Waste', 'Red Dot & Swach Partner'],
+      title: 'Circular Economy & Waste Reduction',
+      text: 'Promoting decentralized composting, menstrual waste management, toxin-free living, and zero-waste lifestyles.',
+      metrics: [
+        { value: '3,500+', label: 'Households Composting' },
+        { value: 'City-wide', label: 'Red Dot Campaigns' },
+        { value: '150+ Tons', label: 'Waste Diverted from Landfills' },
+      ],
+    },
+    {
+      id: 'livelihoods',
+      tags: ['Livelihood & SDG', 'IIM-B NSRCEL Mentored'],
+      title: 'Green Economy & Livelihoods',
+      text: 'Empowering rural farmers, urban-rural linkages (Mera Farmer), and conducting SDG entrepreneurship bootcamps.',
+      metrics: [
+        { value: '280+', label: 'Farmers Connected' },
+        { value: '5,000+', label: 'Consumers Reached' },
+        { value: '15+ Colleges', label: 'SDG Bootcamps' },
+      ],
+    },
+  ],
+};
+
+export const projects = {
+  kicker: 'Projects',
+  title: 'Current & Landmark Ground Projects',
+  intro:
+    'Explore our real-world campaigns, surveys, and multi-stakeholder initiatives driving measurable impact across Pune and Maharashtra.',
+  filters: [
+    'All',
+    'Sustainable Mobility',
+    'Water Security',
+    'Community Engagement',
+    'Mental Health & Climate',
+    'Green Economy & Film',
+    'Education & Youth',
+  ],
+  items: [
+    {
+      category: 'Sustainable Mobility',
+      status: 'Active & Ongoing',
+      partners: 'Parisar & Civic Bodies',
+      title: 'Pune Electoral Wards Sustainable Mobility Survey',
+      text: 'A city-wide qualitative and quantitative survey across all electoral wards of Pune to document walkability, non-motorized transport safety, and public transit bottlenecks.',
+      image: '/image/community-workshop.jpg',
+      points: [
+        'Extensive data collection across all municipal wards in Pune.',
+        'Evidence-backed policy recommendations submitted to PMRDA and PMC traffic authorities.',
+      ],
+      period: '2023 - Present',
+    },
+    {
+      category: 'Community Engagement',
+      status: 'Recurring Series',
+      partners: 'Citizen Collectives & RWAs',
+      title: 'Climate Baithak & Community Synergies',
+      text: 'Periodic open brainstorming and collaborative meetups bringing together environmentalists, civic officers, students, and citizens to co-create actionable climate solutions.',
+      image: '/image/community-workshop.jpg',
+      points: [
+        'Over 25+ successful Baithaks held across Pune neighbourhoods.',
+        'Formation of local ward-level green task forces for waste segregation and tree plantation.',
+      ],
+      period: 'Ongoing Bi-Monthly',
+    },
+    {
+      category: 'Mental Health & Climate',
+      status: 'Active Series',
+      partners: 'Mental Health Experts & Youth Groups',
+      title: 'Climate Emotions Circles (Eco-Anxiety Support)',
+      text: 'A pioneering psychosocial support circle addressing the profound emotional and psychological impact of climate change, heatwaves, and ecological loss on citizens and students.',
+      image: '/image/community-workshop.jpg',
+      points: [
+        'Safe, structured conversational spaces grounded in Buddhist ethics and empathy.',
+        'Equipping youth and frontline activists with tools to manage climate burnout and grief.',
+      ],
+      period: '2022 - Present',
+    },
+    {
+      category: 'Water Security',
+      status: 'Institutional Milestone',
+      partners: 'PMC, ACWADAM & Jalshakti Mission',
+      title: 'Pune Municipal Groundwater Cell & RWH Liaising',
+      text: "Direct collaboration with PMC to operationalize India's first municipal Groundwater Cell and accelerate Rainwater Harvesting across housing societies.",
+      image: '/image/water-conservation.jpg',
+      points: [
+        'Drafting foundational operational guidelines aligned with National Jalshakti Mission.',
+        'Audited 120+ housing societies for rooftop rainwater harvesting feasibility.',
+      ],
+      period: '2021 - Present',
+    },
+    {
+      category: 'Green Economy & Film',
+      status: 'Completed & Screening',
+      partners: 'Crowdfunded & Rural Communities',
+      title: "Documentary: 'Vinchurniche Gandhi' (Forest Farm)",
+      text: 'Produced a documentary on a 98-year-old visionary farmer who transformed 118 acres of barren wasteland into a flourishing biodiverse food forest.',
+      image: '/image/green-environment.jpg',
+      points: [
+        '100% financed through community crowd-funding.',
+        'Screened across universities and farming co-operatives to inspire regenerative agriculture.',
+      ],
+      period: 'Completed Film / Active Screenings',
+    },
+    {
+      category: 'Education & Youth',
+      status: 'Active Series',
+      partners: 'Universities, MCCIA & Green Economy India',
+      title: 'SDG Entrepreneurship & Youth Bootcamps',
+      text: 'Interactive bootcamps and experiential masterclasses teaching college students how to build circular economy startups and sustainable livelihoods aligned with UN SDGs.',
+      image: '/image/community-workshop.jpg',
+      points: [
+        'Trained over 2,500+ college students across Pune and Maharashtra.',
+        'Incubated 15+ student green ideas (upcycling, organic compost, reusable packaging).',
+      ],
+      period: 'Quarterly Academic Calendar',
+    },
+  ],
+};
+
+export const documentary = {
+  kicker: 'Crowdfunded Documentary Feature',
+  title: '“Vinchurniche Gandhi” – 118 Acres of Barren Land to Forest Farm',
+  text: 'Co-produced by CCPEF Director Seema Agrawal through citizen crowdfunding, this inspiring documentary chronicles the life and work of a 98-year-old visionary farmer who transformed 118 acres of arid, drought-prone land into an abundantly biodiverse food forest.',
+  metrics: [
+    { value: '118', label: 'Acres Regenerated' },
+    { value: '98', label: 'Years Old Visionary' },
+    { value: '100%', label: 'Community Funded' },
+  ],
+};
+
+export const leadership = {
+  kicker: 'Leadership',
+  title: 'Directors & Leadership Profiles',
+  intro:
+    'Backed by over three decades of distinguished leadership spanning local governance, urban planning, FMCG marketing, social entrepreneurship, and environmental advocacy.',
+  directors: [
+    {
+      name: 'Vaishali Patkar',
+      role: 'Founder Director',
+      summary:
+        '34+ Years in Civic Governance, Environmental Advocacy & Social Leadership',
+      affiliation: 'Trustee - Mission Groundwater | President - Aundh Vikas Mandal',
+      bio: "Vaishali Patkar is a pioneering civic leader and environmental champion who has collaborated extensively with PMC, PCMC, District Collector, PMRDA, Divisional Commissioner Office, and the National Institute of Urban Affairs (NIUA). She was instrumental in helping PMC establish both its Environment Department and India's first Municipal Groundwater Cell.",
+      milestones: [
+        "Initiated & helped PMC set up the Environment Department and India's first Groundwater Cell under Jalshakti Mission.",
+        'Convener of Texas-Austin and Pune Sister City International program.',
+        'External Member, POSH Committee PMC; President of Aundh Vikas Mandal.',
+        'Key leadership role in Saving Pune Hills, 1975 Maharashtra Tree Act enforcement, and Red Dot Campaign with Swach.',
+        'Spearheaded COVID relief: distributed 100,000+ ration kits from auto drivers to transgender communities and served as a Special Police Officer.',
+        'Certified in Resource Efficiency & Environmental Sustainability (CII), Carbon Footprints, Groundwater Management, and Buddhist Ethics.',
+        'Pioneered early computer literacy in 1994, training 2,000+ underprivileged women and children in Pune slums.',
+      ],
+      expertise: [
+        'Groundwater Policy',
+        'Civic Administration',
+        'Tree Act Advocacy',
+        'Rainwater Harvesting',
+        'CSR Liaising',
+      ],
+    },
+    {
+      name: 'Seema Agrawal',
+      role: 'Director',
+      summary:
+        '30+ Years in Marketing, Social Entrepreneurship, Mentoring & Agri-Ecology',
+      affiliation: 'MBA (Marketing) | M.Com (Business Management)',
+      bio: "Seema Agrawal brings over three decades of enterprise and social development expertise spanning FMCG in India and Canada, grassroots agro-ecology, and community development. As a passionate social entrepreneur, she founded 'Mera Farmer' and produced the celebrated crowd-funded film 'Vinchurniche Gandhi'.",
+      milestones: [
+        'Selected for the prestigious 10K Women Mentorship program at NSRCEL – IIM Bengaluru.',
+        "Founded 'Mera Farmer' in 2016, connecting 280+ organic farmers and rural SMEs with over 5,000 urban Pune households.",
+        "Produced crowd-funded documentary 'Vinchurniche Gandhi' documenting a 98-year-old farmer's 118-acre forest farm.",
+        'Certified in Aquifer and Groundwater Understanding by ACWADAM; pursuing PG studies in Sustainable Natural Resource Management at Ecological Society.',
+        'Active leadership in the Annadata Safe Food Movement connecting NGOs, institutes, and consumers.',
+        'Vice President of Baner Pashan Link Road Welfare Trust; Visiting Faculty at prominent Pune management institutes.',
+        'Founder Facilitator for Green Economy India (Pune Chapter), coaching youth on sustainable livelihoods.',
+      ],
+      expertise: [
+        'Social Entrepreneurship',
+        'Urban-Rural Linkages',
+        'Regenerative Farming',
+        'Green Economy',
+        'Community Mobilization',
+      ],
+    },
+  ],
+};
+
+export const events = {
+  kicker: 'Events',
+  title: 'Upcoming Events',
+  intro:
+    'Participate in our participatory dialogues, youth bootcamps, and hands-on masterclasses across Pune.',
+  items: [
+    {
+      date: 'March 28, 2026',
+      type: 'In-Person Meetup',
+      title: 'Pune Climate Baithak #26: Urban Heat & Water Action',
+      time: '4:00 PM - 6:30 PM IST',
+      place: 'Aundh Vikas Mandal Hall, Pune',
+      facilitator: 'Facilitated by: Vaishali Patkar & Civic Advisory Team',
+      text: 'Join local community leaders, ward representatives, and environmental experts to discuss localized rainwater harvesting and summer heat mitigation strategies for western Pune.',
+      image: '/image/community-workshop.jpg',
+      tags: ['Groundwater', 'Civic Action', 'Pune Wards'],
+      seats: 'Limited: 45 seats',
+    },
+    {
+      date: 'April 05, 2026',
+      type: 'Reflective Workshop',
+      title: 'Climate Emotions Circle: Transforming Eco-Anxiety to Action',
+      time: '5:30 PM - 7:30 PM IST',
+      place: 'Baner Community Space & Hybrid Stream',
+      facilitator: 'Facilitated by: Seema Agrawal & Certified Facilitators',
+      text: 'A guided, confidential, and supportive sharing circle for youth and activists feeling overwhelmed by climate reports, exploring Buddhist ethics, and building shared resilience.',
+      image: '/image/community-workshop.jpg',
+      tags: ['Mental Health', 'Youth', 'Eco-Resilience'],
+      seats: 'Limited: 25 seats',
+    },
+    {
+      date: 'April 18-19, 2026',
+      type: 'Campus Workshop',
+      title: 'Green Economy & Circular Startup Bootcamp (SDG-12 & 13)',
+      time: '10:00 AM - 4:00 PM IST',
+      place: 'Savitribai Phule Pune University Campus',
+      facilitator: 'Facilitated by: Green Economy India Facilitators',
+      text: 'An intensive 2-day hands-on bootcamp for college innovators to prototype sustainable business models, upcycled solutions, and decentralized composting enterprises.',
+      image: '/image/green-environment.jpg',
+      tags: ['Green Jobs', 'Startups', 'Youth'],
+      seats: 'Limited: 80 seats',
+    },
+    {
+      date: 'May 02, 2026',
+      type: 'Technical Seminar',
+      title: 'Rooftop Rainwater Harvesting: Society Implementation Masterclass',
+      time: '10:30 AM - 1:00 PM IST',
+      place: 'Bavdhan Community Center, Pune',
+      facilitator: 'Facilitated by: Mission Groundwater & CCPEF Tech Panel',
+      text: 'Practical engineering, cost estimations, PMC groundwater subsidy guidelines, and maintenance protocols for residential housing society committees.',
+      image: '/image/water-conservation.jpg',
+      tags: ['RWH', 'Housing Societies', 'PMC Subsidies'],
+      seats: 'Limited: 60 seats',
+    },
+  ],
+};
+
+export const join = {
+  kicker: 'Take Action Today',
+  title: 'How You Can Join the Collective Movement',
+  intro:
+    "Whether you are an individual citizen, a student leader, or a corporate CSR team, there is a meaningful place for you in CCPEF's mission.",
+  cards: [
+    {
+      title: 'For Citizens & Volunteers',
+      text: 'Participate in local tree conservation drives, join our monthly Climate Baithaks, learn rainwater harvesting, or help monitor urban biodiversity.',
+      cta: 'Join As Volunteer',
+    },
+    {
+      title: 'For Youth & Educational Campuses',
+      text: 'Host SDG innovation bootcamps, bring Climate Emotion circles to your student council, or conduct environmental research in your locality.',
+      cta: 'Host a Campus Bootcamp',
+    },
+    {
+      title: 'For Corporates & CSR Partners',
+      text: 'Deploy impactful, legally compliant Section 8 CSR funds towards verified groundwater replenishment, food forests, and urban carbon neutrality.',
+      cta: 'Partner for CSR Impact',
+    },
+  ],
+};
+
+export const faqs = [
+  {
+    question: 'Is CCPEF a legally registered NGO in India?',
+    answer:
+      'Yes. Climate Collective Pune Environmental Foundation is a registered Section 8 Non-Profit Company under the Ministry of Corporate Affairs, Government of India (CIN: U80900PN2021NPL203043), established in 2021.',
+  },
+  {
+    question: 'How can my housing society implement Rainwater Harvesting with CCPEF?',
+    answer:
+      'We conduct preliminary rooftop feasibility audits, connect you with PMC-approved hydrogeological methodologies, and guide your society management through cost estimation and technical implementation.',
+  },
+  {
+    question: "What is a 'Climate Emotions Circle'?",
+    answer:
+      'It is a facilitated, compassionate, and psychologically safe group dialogue for individuals feeling eco-anxiety, climate grief, or burnout.',
+  },
+  {
+    question: 'How can college students or young professionals get involved?',
+    answer:
+      'You can attend our monthly Climate Baithaks, apply to volunteer for civic surveys (such as the Parisar Mobility project), or join our SDG Green Economy Bootcamps.',
+  },
+  {
+    question: 'How can corporate CSR programs partner with CCPEF?',
+    answer:
+      'We design tailored, measurable environmental CSR initiatives in Pune & Maharashtra, including food forest creation, decentralized composting programs, community rainwater harvesting, and municipal climate action cells.',
+  },
+];
+
+export const contact = {
+  kicker: 'Contact',
+  title: "Let's Collaborate for a Greener Planet",
+  intro:
+    'Whether you are looking to implement rainwater harvesting in your society, host a climate workshop, or partner on regional environmental policy, our team is ready to assist.',
+  formTitle: 'Send an Inquiry',
+  formIntro:
+    'Fill out this quick form and our directors/coordinators will connect with you.',
+  interests: [
+    'General Inquiry',
+    'Housing Society Rainwater Harvesting',
+    'Climate Emotions Circle RSVP',
+    'Campus / Student Innovation (SDG Bootcamp)',
+    'Corporate CSR Partnership',
+    'Volunteer with CCPEF',
+    'Mera Farmer / Agro-Ecology',
+  ],
+};
+
+export const footer = {
+  blurb:
+    'Climate Collective Pune Environmental Foundation (CCPEF) is a registered Section 8 Non-Profit organization dedicated to accelerating climate action through environmental awareness, water security, and community synergy.',
+  quickLinks: [
+    { label: 'Home', href: '#home' },
+    { label: 'Vision & Mission', href: '#vision' },
+    { label: 'Focus Pillars', href: '#focus' },
+    { label: 'Current Projects', href: '#projects' },
+    { label: 'Directors Profile', href: '#leadership' },
+    { label: 'Climate Baithaks', href: '#events' },
+    { label: 'Contact & Office', href: '#contact' },
+  ],
+  focusAreas: [
+    { label: 'Water & Groundwater Cell', href: '#groundwater' },
+    { label: 'Save Pune Hills & Tree Act', href: '#hills' },
+    { label: 'Climate Emotions Circles', href: '#wellbeing' },
+    { label: 'Sustainable Mobility (Parisar)', href: '#mobility' },
+    { label: 'Mera Farmer & Food Forests', href: '#livelihoods' },
+    { label: 'Circular Waste Composting', href: '#waste' },
+  ],
+  subscribeText:
+    'Subscribe to get updates on upcoming Climate Baithaks, RWH workshops, and eco-initiatives.',
+};
