@@ -5,8 +5,6 @@ export const site = {
   tagline: 'Small Actions, Lasting Environmental Impact',
   cin: 'U80900PN2021NPL203043',
   location: 'Pune, Maharashtra',
-  phone: '+91 7391035752',
-  phoneHref: 'tel:+917391035752',
   email: 'ccpenvironmentalfoundation@gmail.com',
   emailHref: 'mailto:ccpenvironmentalfoundation@gmail.com',
   office:
@@ -119,6 +117,7 @@ export const pillars = {
   items: [
     {
       id: 'groundwater',
+      image: '/image/pigaws.webp',
       tags: ['Conservation', 'Jalshakti Mission Aligned'],
       title: 'Groundwater & Water Security',
       text: "Pioneering community-level rainwater harvesting, aquifer mapping, and Pune's first Municipal Groundwater Cell.",
@@ -127,9 +126,16 @@ export const pillars = {
         { value: "India's 1st PMC Cell", label: 'Aquifer Cells Supported' },
         { value: 'Millions of Litres', label: 'Water Saved Annually' },
       ],
+      interventions: [
+        'Assisted PMC (Pune Municipal Corporation) in establishing India’s first dedicated Groundwater Cell following Jalshakti Mission guidelines.',
+        'Hands-on awareness and technical liaison for residential societies, commercial complexes, and schools on Rainwater Harvesting (RWH).',
+        'Certified groundwater and aquifer management guidance based on ACWADAM methodologies.',
+        'Advocacy for sustainable urban water replenishment and prevention of borewell depletion.',
+      ],
     },
     {
       id: 'hills',
+      image: '/image/piueahp.jpeg',
       tags: ['Biodiversity', 'Grassroots Movement'],
       title: 'Urban Ecology & Hill Protection',
       text: "Spearheading grassroots movements to protect Pune's hills, enforce the Tree Act, and build urban food forests.",
@@ -138,9 +144,16 @@ export const pillars = {
         { value: 'Vetal & Baner Hills', label: 'Hill Ecosystems Protected' },
         { value: '1975 Act Active', label: 'Tree Act PMC Enforcements' },
       ],
+      interventions: [
+        "Key leadership role in the high-profile 'Save Pune Hills' advocacy campaign against ecological degradation.",
+        'Active enforcement and community monitoring of the 1975 Maharashtra (Urban Areas) Protection & Preservation of Trees Act in PMC limits.',
+        'Urban food forest creation, native species sapling drives, and biodiversity documentation across Pune neighbourhoods.',
+        'Developing sustainable urban green lungs and preserving fragile micro-climatic biodiversity zones.',
+      ],
     },
     {
       id: 'wellbeing',
+      image: '/image/picamw.jpeg',
       tags: ['Community Wellbeing', 'Unique Psychosocial Hub'],
       title: 'Climate & Mental Wellbeing',
       text: "Hosting transformative 'Climate Emotions Circles' to address eco-anxiety, climate grief, and foster emotional resilience.",
@@ -149,9 +162,16 @@ export const pillars = {
         { value: '1,200+', label: 'Participants Supported' },
         { value: 'Certified Framework', label: 'Psychology & Ethics Grounding' },
       ],
+      interventions: [
+        'First-of-its-kind dedicated psychosocial circles in Pune helping citizens, youth, and activists process climate distress and eco-burnout.',
+        'Grounded in Buddhist ethics, modern psychology, and compassionate group dialogue techniques.',
+        'Transforming passive climate despair into empowering, synergistic community stewardship.',
+        'Collaborations with mental health professionals and educational institutions across Maharashtra.',
+      ],
     },
     {
       id: 'mobility',
+      image: '/image/community-workshop.jpg',
       tags: ['Urban Planning', 'Parisar Collaboration'],
       title: 'Sustainable Mobility & Civic Planning',
       text: 'Conducting comprehensive ward-by-ward mobility surveys and campaigning for pedestrian safety & carbon neutrality.',
@@ -160,9 +180,16 @@ export const pillars = {
         { value: 'Parisar', label: 'Partner Organization' },
         { value: 'Footpaths & Public Transit', label: 'Focus Areas' },
       ],
+      interventions: [
+        'Leading the comprehensive Sustainable Mobility Survey across all electoral wards of Pune in partnership with Parisar.',
+        'Civic campaigns addressing footpath encroachment, non-motorized transport (NMT), and road safety advocacy.',
+        'Direct engagement with PMRDA, Smart City CEO, and PMC traffic departments to champion pedestrian-first urban design.',
+        'Promoting public transit integration and carbon-neutral transit habits among urban citizens.',
+      ],
     },
     {
       id: 'waste',
+      image: '/image/piceawr.jpeg',
       tags: ['Zero Waste', 'Red Dot & Swach Partner'],
       title: 'Circular Economy & Waste Reduction',
       text: 'Promoting decentralized composting, menstrual waste management, toxin-free living, and zero-waste lifestyles.',
@@ -171,9 +198,16 @@ export const pillars = {
         { value: 'City-wide', label: 'Red Dot Campaigns' },
         { value: '150+ Tons', label: 'Waste Diverted from Landfills' },
       ],
+      interventions: [
+        'Promoting decentralized wet waste composting systems in housing societies, schools, and corporate parks.',
+        'Advocacy and awareness on Sustainable Menstruation and safe disposal via the Red Dot Campaign in collaboration with Swach.',
+        'Workshops on Toxin-Free Living: replacing single-use plastics, toxic household chemicals, and synthetic cosmetics with eco-friendly alternatives.',
+        'Circular economy modules for schools, colleges, and resident welfare associations.',
+      ],
     },
     {
       id: 'livelihoods',
+      image: '/image/pigeal.jpeg',
       tags: ['Livelihood & SDG', 'IIM-B NSRCEL Mentored'],
       title: 'Green Economy & Livelihoods',
       text: 'Empowering rural farmers, urban-rural linkages (Mera Farmer), and conducting SDG entrepreneurship bootcamps.',
@@ -181,6 +215,12 @@ export const pillars = {
         { value: '280+', label: 'Farmers Connected' },
         { value: '5,000+', label: 'Consumers Reached' },
         { value: '15+ Colleges', label: 'SDG Bootcamps' },
+      ],
+      interventions: [
+        "Spearheading the 'Mera Farmer' initiative, directly bridging 280+ natural farmers and SMEs with 5,000+ urban households in Pune.",
+        "Co-produced the inspiring crowd-funded documentary 'Vinchurniche Gandhi' on 118 acres of barren land transformed into a food forest.",
+        'Founder Facilitators for Green Economy India (Pune Chapter) fostering youth green entrepreneurship.',
+        'Conducting intensive SDG-aligned bootcamps and mentoring sessions across Pune university campuses.',
       ],
     },
   ],
@@ -231,9 +271,9 @@ export const projects = {
       category: 'Community Engagement',
       status: 'Proposed opportunity — discussion only',
       partners: 'No Austin partners confirmed',
-      title: 'Proposed Pune–Austin Knowledge Exchange',
+      title: 'Proposed Texas-Austin and Pune Sister City International Program',
       text: 'A proposed conversation on community-led climate engagement and how residents’ experiences can inform inclusive climate resilience. No partnership, endorsement, funding, or activity is confirmed.',
-      image: '/image/community-workshop.jpg',
+      image: '/image/Texas_austin_image.jpeg',
       points: [
         'Peer dialogue on community listening and climate engagement.',
         'Potential youth and university learning or research collaboration.',
@@ -248,7 +288,7 @@ export const projects = {
       partners: 'Universities, MCCIA & Green Economy India',
       title: 'SDG Entrepreneurship & Youth Bootcamps',
       text: 'Interactive bootcamps and experiential masterclasses teaching college students how to build circular economy startups and sustainable livelihoods aligned with UN SDGs.',
-      image: '/image/community-workshop.jpg',
+      image: '/image/sdgs.jpg',
       points: [
         'Trained over 2,500+ college students across Pune and Maharashtra.',
         'Incubated 15+ student green ideas (upcycling, organic compost, reusable packaging).',
@@ -261,7 +301,7 @@ export const projects = {
       partners: 'Crowdfunded & Rural Communities',
       title: "Documentary: 'Vinchurniche Gandhi' (Forest Farm)",
       text: 'Produced a documentary on a 98-year-old visionary farmer who transformed 118 acres of barren wasteland into a flourishing biodiverse food forest.',
-      image: '/image/green-environment.jpg',
+      image: '/image/vinchurniche_gandhi.png',
       points: [
         '100% financed through community crowd-funding.',
         'Screened across universities and farming co-operatives to inspire regenerative agriculture.',
@@ -316,7 +356,7 @@ export const leadership = {
   directors: [
     {
       name: 'Vaishali Patkar',
-      linkedin: 'https://www.linkedin.com/in/vaishali-patkar/',
+      linkedin: 'https://www.linkedin.com/in/vaishali-patkar-01b02611/?isSelfProfile=false',
       role: 'Founder Director',
       summary:
         '34+ Years in Civic Governance, Environmental Advocacy & Social Leadership',
@@ -341,7 +381,7 @@ export const leadership = {
     },
     {
       name: 'Seema Agrawal',
-      linkedin: 'https://www.linkedin.com/in/seema-agrawal/',
+      linkedin: 'https://www.linkedin.com/in/seemaagrawalcoach/?isSelfProfile=false',
       role: 'Director',
       summary:
         '30+ Years in Marketing, Social Entrepreneurship, Mentoring & Agri-Ecology',

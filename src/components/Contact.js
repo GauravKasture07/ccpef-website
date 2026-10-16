@@ -62,7 +62,6 @@ const socialLinks = [
 const initial = {
   name: '',
   email: '',
-  phone: '',
   interest: contact.interests[0],
   message: '',
 };
@@ -110,7 +109,6 @@ function Contact() {
         {
           name: form.name.trim(),
           email: form.email.trim(),
-          phone: form.phone.trim(),
           interest: form.interest,
           message: form.message.trim(),
         },
@@ -148,22 +146,11 @@ function Contact() {
             <p>{site.office}</p>
             {site.previousOffice && <p>{site.previousOffice}</p>}
 
-            <h3>Phone Contact</h3>
-            <p>
-              <a href={site.phoneHref}>{site.phone}</a>
-            </p>
-
             <h3>Official Email</h3>
             <p>
               <a href={site.emailHref}>{site.email}</a>
             </p>
 
-            <p className="contact__cin">
-              Section 8 Registered Entity
-              <br />
-              Corporate Identification Number (CIN):{' '}
-              <strong>{site.cin}</strong>
-            </p>
             <div className="contact__socials" aria-label="Social media links">
               {socialLinks.map((social) => (
                 <a
@@ -214,24 +201,6 @@ function Contact() {
                 value={form.email}
                 onChange={update}
                 placeholder="name@example.com"
-                disabled={sending}
-              />
-            </label>
-
-            <label>
-              Phone Number *
-              <input
-                type="tel"
-                name="phone"
-                autoComplete="tel"
-                required
-                minLength={10}
-                maxLength={15}
-                pattern="[0-9+() -]{10,15}"
-                title="Enter a valid phone number using 10 to 15 characters."
-                value={form.phone}
-                onChange={update}
-                placeholder="98765 43210"
                 disabled={sending}
               />
             </label>

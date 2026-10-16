@@ -73,12 +73,6 @@
   line-height: 1.85;
 }
 
-.footer__cin {
-  color: var(--footer-muted);
-  font-size: 0.8rem;
-  overflow-wrap: anywhere;
-}
-
 .footer__column h4 {
   margin: 0 0 1.4rem;
   color: #fff;

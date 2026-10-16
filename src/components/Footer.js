@@ -29,8 +29,6 @@ function Footer() {
             </a>
 
             <p className="footer__blurb">{footer.blurb}</p>
-            <p className="footer__cin">CIN: {site.cin}</p>
-
           </div>
 
           <div className="footer__column">
@@ -91,7 +89,6 @@ function Footer() {
         <p>{site.copyright}</p>
 
         <div className="footer__contact">
-          <a href={site.phoneHref}>{site.phone}</a>
           <a href={site.emailHref}>{site.email}</a>
         </div>
 

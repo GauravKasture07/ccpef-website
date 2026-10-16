@@ -54,14 +54,15 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 1.6rem;
+  gap: 1rem;
+  padding: 1.25rem 1.4rem;
 }
 
 .pillar__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin: 1.25rem 0;
 }
 
 .pillar__tags span {
@@ -77,12 +78,8 @@
   transition: background 0.25s ease, color 0.25s ease;
 }
 
-.pillar:hover .pillar__tags span {
-  background: #e4efdf;
-}
-
 .pillar__content h3 {
-  margin: 0 0 0.8rem;
+  margin: 0;
   color: var(--forest);
   font-size: clamp(1.25rem, 2vw, 1.65rem);
   font-weight: 750;
@@ -91,28 +88,40 @@
   transition: color 0.25s ease;
 }
 
-.pillar:hover .pillar__content h3 {
-  color: var(--moss);
+.pillar__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
 }
 
-.pillar__content > p {
-  flex: 1;
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.94rem;
-  line-height: 1.8;
-}
-
-.pillar__actions {
+.pillar__metric {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  margin-top: 1.5rem;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.7rem;
+  border: 1px solid rgba(20, 53, 40, 0.1);
+  border-radius: 12px;
+  background: linear-gradient(145deg, #fff, #f3f7f1);
+}
+
+.pillar__metric strong {
+  color: var(--forest);
+  font-size: 0.88rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.pillar__metric span {
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.4;
 }
 
 .pillar__button {
   display: inline-flex;
-  flex: 1 1 110px;
+  align-self: flex-start;
   min-height: 46px;
   align-items: center;
   justify-content: center;
@@ -126,6 +135,7 @@
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   transition: background 0.25s ease, color 0.25s ease,
     transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -153,6 +163,127 @@
   outline-offset: 4px;
 }
 
+.pillar-dialog {
+  width: min(680px, calc(100% - 2rem));
+  max-width: 680px;
+  max-height: min(90vh, 820px);
+  padding: 0;
+  overflow: auto;
+  border: 1px solid rgba(20, 53, 40, 0.12);
+  border-radius: 22px;
+  background: #fff;
+  color: var(--forest);
+  box-shadow: 0 25px 80px rgba(12, 35, 22, 0.3);
+}
+
+.pillar-dialog::backdrop {
+  background: rgba(10, 28, 18, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.pillar-dialog__content {
+  position: relative;
+}
+
+.pillar-dialog__image {
+  display: block;
+  width: 100%;
+  height: clamp(190px, 35vh, 300px);
+  object-fit: cover;
+}
+
+.pillar-dialog__body {
+  padding: clamp(1.25rem, 4vw, 2rem);
+}
+
+.pillar-dialog__body h2 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.25;
+}
+
+.pillar-dialog__description {
+  margin: 0.9rem 0 1.25rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.pillar-dialog__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.pillar-dialog__metric {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem;
+  border: 1px solid rgba(20, 53, 40, 0.1);
+  border-radius: 14px;
+  background: linear-gradient(145deg, #fff, #f3f7f1);
+}
+
+.pillar-dialog__metric strong {
+  color: var(--forest);
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.pillar-dialog__metric span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.pillar-dialog__interventions {
+  margin-top: 1.5rem;
+}
+
+.pillar-dialog__interventions h3 {
+  margin: 0 0 0.75rem;
+  color: var(--forest);
+  font-size: 1.05rem;
+}
+
+.pillar-dialog__interventions ul {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.pillar-dialog__interventions li::marker {
+  color: var(--moss);
+}
+
+.pillar-dialog__close {
+  position: absolute;
+  z-index: 1;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--forest);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.pillar-dialog__close:focus-visible {
+  outline: 3px solid var(--moss);
+  outline-offset: 3px;
+}
+
 @media (max-width: 980px) {
   .pillars__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -178,16 +309,22 @@
     padding: 1.3rem;
   }
 
-  .pillar__actions {
-    gap: 0.6rem;
+  .pillar__metrics {
+    gap: 0.4rem;
+  }
+
+  .pillar__metric {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .pillar-dialog__metrics {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .pillar,
   .pillar__image,
-  .pillar__tags span,
-  .pillar__content h3,
   .pillar__button,
   .pillar__button span {
     transition: none;

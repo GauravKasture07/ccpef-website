@@ -82,22 +82,6 @@
   color: #57945d;
 }
 
-.contact__cin {
-  position: relative;
-  z-index: 1;
-  margin-top: 1.6rem;
-  padding: 1.1rem 1.2rem;
-  border: 1px solid rgba(49, 112, 70, 0.12);
-  border-radius: 14px;
-  background: var(--paper, #f4f7f1);
-}
-
-.contact__cin p {
-  margin: 0;
-  font-size: 0.88rem;
-  overflow-wrap: anywhere;
-}
-
 .contact__socials {
   position: relative;
   z-index: 1;
@@ -258,9 +242,6 @@
     font-size: 16px;
   }
 
-  .contact__cin {
-    padding: 1rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

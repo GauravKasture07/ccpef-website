@@ -163,76 +163,89 @@
 .hero__art {
   position: relative;
   overflow: hidden;
-  padding: 1.2rem;
-  background: linear-gradient(145deg, #edf7eb, #d6ead8);
+  background: #e7efe4;
   border: 1px solid rgba(55, 111, 70, 0.12);
   border-radius: 28px;
   box-shadow: 0 24px 70px rgba(31, 74, 47, 0.14);
-  transform: rotate(1deg);
-  transition: transform 350ms ease, box-shadow 350ms ease;
+  transition: box-shadow 350ms ease;
 }
 
 .hero__art:hover {
-  transform: rotate(0deg) translateY(-4px);
   box-shadow: 0 30px 75px rgba(31, 74, 47, 0.19);
 }
 
-.hero__art-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.2rem 0.3rem 0.8rem;
+.hero__slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: inherit;
+  aspect-ratio: 560 / 460;
+  background: #dce8d8;
 }
 
-.hero__art-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  color: #315c40;
-  font-size: 0.82rem;
-  font-weight: 750;
-}
-
-.hero__art-label span {
-  width: 8px;
-  height: 8px;
-  background: #4d9568;
-  border-radius: 50%;
-}
-
-.hero__art-sun {
-  color: #c58c35;
-  font-size: 1.6rem;
-  animation: hero-sun 16s linear infinite;
-}
-
-.hero__landscape {
+.hero__slide {
   display: block;
   width: 100%;
-  height: auto;
-  overflow: visible;
-  border-radius: 20px;
+  height: 100%;
+  object-fit: cover;
+  animation: hero-slide-enter 550ms ease both;
 }
 
-.hero__tree--one {
-  transform-origin: 100px 360px;
-  animation: hero-sway 5s ease-in-out infinite alternate;
+.hero__slider-controls {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
 }
 
-.hero__tree--two {
-  transform-origin: 460px 350px;
-  animation: hero-sway 6s ease-in-out infinite alternate-reverse;
+.hero__slider-controls > button {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--hero-green);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
 }
 
-.hero__leaf--one {
-  transform-origin: 340px 155px;
-  animation: hero-sway 4s ease-in-out infinite alternate;
+.hero__slider-controls > button:hover {
+  transform: scale(1.06);
+  background: #fff;
 }
 
-.hero__leaf--two {
-  transform-origin: 180px 180px;
-  animation: hero-sway 4.5s ease-in-out infinite alternate-reverse;
+.hero__slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(10, 35, 22, 0.55);
+}
+
+.hero__slider-dots button {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.hero__slider-dots button.is-active {
+  background: #fff;
+  transform: scale(1.25);
+}
+
+.hero__slider-controls button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
 }
 
 .hero__note {
@@ -334,18 +347,16 @@
   }
 }
 
-@keyframes hero-sway {
-  from {
-    transform: rotate(-2deg);
-  }
-  to {
-    transform: rotate(2deg);
-  }
-}
 
-@keyframes hero-sun {
+
+@keyframes hero-slide-enter {
+  from {
+    opacity: 0.65;
+    transform: scale(1.025);
+  }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -435,7 +446,6 @@
   }
 
   .hero__art {
-    padding: 0.8rem;
     border-radius: 21px;
   }
 

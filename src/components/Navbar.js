@@ -38,7 +38,6 @@ function Navbar() {
         </p>
 
         <div className="nav__meta">
-          <a href={site.phoneHref}>{site.phone}</a>
           <a href={site.emailHref}>{site.email}</a>
           <span>{site.location}</span>
         </div>
