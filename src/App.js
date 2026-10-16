@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Pillars from './components/Pillars';
 import Projects from './components/Projects';
-import Documentary from './components/Documentary';
 import Leadership from './components/Leadership';
 import Events from './components/Events';
 import Join from './components/Join';
