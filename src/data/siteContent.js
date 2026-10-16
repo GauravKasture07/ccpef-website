@@ -3,15 +3,16 @@ export const site = {
   fullName: 'Climate Collective Pune Environmental Foundation',
   shortName: 'CCPEF',
   tagline: 'Small Actions, Lasting Environmental Impact',
-  cin: 'DUMMY-CIN-000000',
+  cin: 'U80900PN2021NPL203043',
   location: 'Pune, Maharashtra',
-  phone: '+91 9000000000',
-  phoneHref: 'tel:+919000000000',
-  email: 'hello@example.com',
-  emailHref: 'mailto:hello@example.com',
-  office: '123 Green Avenue, Pune, Maharashtra, India',
+  phone: '+91 7391035752',
+  phoneHref: 'tel:+917391035752',
+  email: 'ccpenvironmentalfoundation@gmail.com',
+  emailHref: 'mailto:ccpenvironmentalfoundation@gmail.com',
+  office:
+    'B-2-3 Annapurna Ashirwad Society, Survey No. 162/38/112/A, Aundh, Pune 411007, Maharashtra, India',
   previousOffice: '',
-  copyright: '© 2026 GreenFuture Foundation. All rights reserved.',
+  copyright: '© 2026 Climate Collective Pune Environmental Foundation. All rights reserved.',
 };
 
 export const navLinks = [
@@ -112,7 +113,7 @@ export const about = {
 
 export const pillars = {
   kicker: 'Our Focus',
-  title: 'Our 6 Pillars of Ecological & Community Impact',
+  title: 'Our Pillars of Ecological & Community Impact',
   intro:
     'From water security and hill preservation to psychosocial climate support and green livelihoods, we implement interconnected interventions for lasting change.',
   items: [
@@ -189,7 +190,7 @@ export const projects = {
   kicker: 'Projects',
   title: 'Current & Landmark Ground Projects',
   intro:
-    'Explore our real-world campaigns, surveys, and multi-stakeholder initiatives driving measurable impact across Pune and Maharashtra.',
+    'Campaigns, surveys, and multi-stakeholder initiatives driving measurable impact across Pune and Maharashtra.',
   filters: [
     'All',
     'Sustainable Mobility',
@@ -200,32 +201,6 @@ export const projects = {
     'Education & Youth',
   ],
   items: [
-    {
-      category: 'Sustainable Mobility',
-      status: 'Active & Ongoing',
-      partners: 'Parisar & Civic Bodies',
-      title: 'Pune Electoral Wards Sustainable Mobility Survey',
-      text: 'A city-wide qualitative and quantitative survey across all electoral wards of Pune to document walkability, non-motorized transport safety, and public transit bottlenecks.',
-      image: '/image/community-workshop.jpg',
-      points: [
-        'Extensive data collection across all municipal wards in Pune.',
-        'Evidence-backed policy recommendations submitted to PMRDA and PMC traffic authorities.',
-      ],
-      period: '2023 - Present',
-    },
-    {
-      category: 'Community Engagement',
-      status: 'Recurring Series',
-      partners: 'Citizen Collectives & RWAs',
-      title: 'Climate Baithak & Community Synergies',
-      text: 'Periodic open brainstorming and collaborative meetups bringing together environmentalists, civic officers, students, and citizens to co-create actionable climate solutions.',
-      image: '/image/community-workshop.jpg',
-      points: [
-        'Over 25+ successful Baithaks held across Pune neighbourhoods.',
-        'Formation of local ward-level green task forces for waste segregation and tree plantation.',
-      ],
-      period: 'Ongoing Bi-Monthly',
-    },
     {
       category: 'Mental Health & Climate',
       status: 'Active Series',
@@ -253,17 +228,19 @@ export const projects = {
       period: '2021 - Present',
     },
     {
-      category: 'Green Economy & Film',
-      status: 'Completed & Screening',
-      partners: 'Crowdfunded & Rural Communities',
-      title: "Documentary: 'Vinchurniche Gandhi' (Forest Farm)",
-      text: 'Produced a documentary on a 98-year-old visionary farmer who transformed 118 acres of barren wasteland into a flourishing biodiverse food forest.',
-      image: '/image/green-environment.jpg',
+      category: 'Community Engagement',
+      status: 'Proposed opportunity — discussion only',
+      partners: 'No Austin partners confirmed',
+      title: 'Proposed Pune–Austin Knowledge Exchange',
+      text: 'A proposed conversation on community-led climate engagement and how residents’ experiences can inform inclusive climate resilience. No partnership, endorsement, funding, or activity is confirmed.',
+      image: '/image/community-workshop.jpg',
       points: [
-        '100% financed through community crowd-funding.',
-        'Screened across universities and farming co-operatives to inspire regenerative agriculture.',
+        'Peer dialogue on community listening and climate engagement.',
+        'Potential youth and university learning or research collaboration.',
+        'Cross-city discussion of community priorities and climate resilience.',
+        'Possible joint learning brief, subject to mutual agreement on scope and review.',
       ],
-      period: 'Completed Film / Active Screenings',
+      period: 'Proposed',
     },
     {
       category: 'Education & Youth',
@@ -277,6 +254,45 @@ export const projects = {
         'Incubated 15+ student green ideas (upcycling, organic compost, reusable packaging).',
       ],
       period: 'Quarterly Academic Calendar',
+    },
+    {
+      category: 'Green Economy & Film',
+      status: 'Completed & Screening',
+      partners: 'Crowdfunded & Rural Communities',
+      title: "Documentary: 'Vinchurniche Gandhi' (Forest Farm)",
+      text: 'Produced a documentary on a 98-year-old visionary farmer who transformed 118 acres of barren wasteland into a flourishing biodiverse food forest.',
+      image: '/image/green-environment.jpg',
+      points: [
+        '100% financed through community crowd-funding.',
+        'Screened across universities and farming co-operatives to inspire regenerative agriculture.',
+      ],
+      period: 'Completed Film / Active Screenings',
+    },
+    {
+      category: 'Sustainable Mobility',
+      status: 'Active & Ongoing',
+      partners: 'Parisar & Civic Bodies',
+      title: 'Pune Electoral Wards Sustainable Mobility Survey',
+      text: 'A city-wide qualitative and quantitative survey across all electoral wards of Pune to document walkability, non-motorized transport safety, and public transit bottlenecks.',
+      image: '/image/community-workshop.jpg',
+      points: [
+        'Extensive data collection across all municipal wards in Pune.',
+        'Evidence-backed policy recommendations submitted to PMRDA and PMC traffic authorities.',
+      ],
+      period: '2023 - Present',
+    },
+    {
+      category: 'Community Engagement',
+      status: 'Recurring Series',
+      partners: 'Citizen Collectives & RWAs',
+      title: 'Climate Baithak & Community Synergies',
+      text: 'Periodic open brainstorming and collaborative meetups bringing together environmentalists, civic officers, students, and citizens to co-create actionable climate solutions.',
+      image: '/image/community-workshop.jpg',
+      points: [
+        'Over 25+ successful Baithaks held across Pune neighbourhoods.',
+        'Formation of local ward-level green task forces for waste segregation and tree plantation.',
+      ],
+      period: 'Ongoing Bi-Monthly',
     },
   ],
 };
@@ -300,6 +316,7 @@ export const leadership = {
   directors: [
     {
       name: 'Vaishali Patkar',
+      linkedin: 'https://www.linkedin.com/in/vaishali-patkar/',
       role: 'Founder Director',
       summary:
         '34+ Years in Civic Governance, Environmental Advocacy & Social Leadership',
@@ -324,6 +341,7 @@ export const leadership = {
     },
     {
       name: 'Seema Agrawal',
+      linkedin: 'https://www.linkedin.com/in/seema-agrawal/',
       role: 'Director',
       summary:
         '30+ Years in Marketing, Social Entrepreneurship, Mentoring & Agri-Ecology',
@@ -353,7 +371,7 @@ export const events = {
   kicker: 'Events',
   title: 'Upcoming Events',
   intro:
-    'Participate in our participatory dialogues, youth bootcamps, and hands-on masterclasses across Pune.',
+    '',
   items: [
     {
       date: 'March 28, 2026',
@@ -465,7 +483,7 @@ export const contact = {
     'Whether you are looking to implement rainwater harvesting in your society, host a climate workshop, or partner on regional environmental policy, our team is ready to assist.',
   formTitle: 'Send an Inquiry',
   formIntro:
-    'Fill out this quick form and our directors/coordinators will connect with you.',
+    'Fill out this form and we will connect with you.',
   interests: [
     'General Inquiry',
     'Housing Society Rainwater Harvesting',

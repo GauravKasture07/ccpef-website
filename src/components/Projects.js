@@ -21,7 +21,6 @@ function Projects() {
       id="projects"
       kicker={projects.kicker}
       title={projects.title}
-      intro={projects.intro}
     >
       <div className="filters" role="tablist" aria-label="Project categories">
         {projects.filters.map((item) => (

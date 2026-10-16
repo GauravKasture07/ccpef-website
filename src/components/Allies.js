@@ -1,4 +1,5 @@
-import { partners } from '../data/siteContent';
+import { about, partners } from '../data/siteContent';
+import Reveal from './Reveal';
 import './About.css';
 
 const partnerLogoMap = {
@@ -8,6 +9,7 @@ const partnerLogoMap = {
   'Parisar (Sustainable Mobility)': '/image/parisar.jpg',
   'Mission Groundwater & ACWADAM': '/image/acwadamorg.jpg',
   'NSRCEL - IIM Bengaluru': '/image/nsrcl.png',
+  'Swach & Red Dot Movement': '/image/swach.png',
 };
 
 const partnerLogos = partners.map((name) => ({
@@ -45,6 +47,23 @@ function Allies() {
           ))}
         </div>
       </div>
+
+      <Reveal>
+        <blockquote className="about__close">
+          <span className="about__close-label">BE PART OF THE CHANGE</span>
+          <p>{about.closingQuote}</p>
+          <span className="about__close-text">{about.closingText}</span>
+
+          <div className="about__buttons">
+            <a className="btn btn--primary" href="#contact">
+              Donate <span aria-hidden="true">→</span>
+            </a>
+            <a className="btn btn--ghost" href="#focus">
+              Explore Pillars
+            </a>
+          </div>
+        </blockquote>
+      </Reveal>
     </div>
   );
 }

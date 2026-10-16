@@ -9,7 +9,6 @@ function Join() {
       id="join"
       kicker={join.kicker}
       title={join.title}
-      intro={join.intro}
     >
       <div className="join">
         {join.cards.map((card, index) => (

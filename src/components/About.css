@@ -242,66 +242,14 @@
   line-height: 1.85;
 }
 
-.about__card .kicker {
-  margin-bottom: 0.7rem;
-  color: var(--moss);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
 .about__quote {
   margin: 1.3rem 0;
   padding: 0.3rem 0 0.3rem 1.1rem;
   color: var(--leaf);
   border-left: 3px solid var(--leaf);
   font-family: var(--serif);
-  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
   line-height: 1.7;
-}
-
-.about__card ul,
-.about__list {
-  display: grid;
-  gap: 0.9rem;
-  margin: 0;
-  padding-left: 1.2rem;
-  color: var(--muted);
-  line-height: 1.75;
-}
-
-.about__list {
-  padding-left: 0;
-  list-style: none;
-}
-
-.about__list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-}
-
-.about__card li::marker {
-  color: var(--leaf);
-}
-
-.about__card li strong {
-  color: var(--forest);
-}
-
-.about__check {
-  display: grid;
-  flex: 0 0 25px;
-  place-items: center;
-  width: 25px;
-  height: 25px;
-  margin-top: 2px;
-  color: var(--forest);
-  background: var(--mist);
-  border-radius: 50%;
-  font-size: 0.8rem;
-  font-weight: 800;
 }
 
 .about__combined-section .about__matrix span {

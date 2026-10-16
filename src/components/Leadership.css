@@ -73,6 +73,21 @@ leaders {
   letter-spacing: -0.02em;
 }
 
+.leader__heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.leader__heading h3 {
+  min-width: 0;
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  line-height: 1.25;
+}
+
 .leader__aff {
   display: block;
   margin-bottom: 1rem;
@@ -80,6 +95,39 @@ leaders {
   font-size: 0.9rem;
   font-weight: 650;
   line-height: 1.6;
+}
+
+.leader__linkedin {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid rgba(20, 53, 40, 0.12);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--forest);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.leader__linkedin svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.leader__linkedin:hover {
+  transform: translateY(-2px);
+  background: var(--forest);
+  color: #fff;
+}
+
+.leader__linkedin:focus-visible {
+  outline: 3px solid var(--moss);
+  outline-offset: 3px;
 }
 
 .leader p,
@@ -164,6 +212,7 @@ leaders {
   .leader,
   .leader::before,
   .leader__avatar,
+  .leader__linkedin,
   .leader__tags span {
     transition: none;
   }

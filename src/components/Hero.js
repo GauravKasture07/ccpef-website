@@ -127,21 +127,6 @@ function Hero() {
               </g>
             </svg>
 
-            <div className="hero__art-caption">
-              <span className="hero__caption-icon" aria-hidden="true">✳</span>
-              <div>
-                <strong>Nature needs us.</strong>
-                <span>Every small step matters.</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="hero__floating hero__floating--top">
-            <span className="hero__floating-icon" aria-hidden="true">♧</span>
-            <span>
-              <strong>Think green</strong>
-              <small>Live sustainably</small>
-            </span>
           </div>
 
           <div className="hero__note">

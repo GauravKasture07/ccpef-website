@@ -146,7 +146,7 @@ function Contact() {
           <aside className="contact__details">
             <h3>Registered Office</h3>
             <p>{site.office}</p>
-            <p>{site.previousOffice}</p>
+            {site.previousOffice && <p>{site.previousOffice}</p>}
 
             <h3>Phone Contact</h3>
             <p>
@@ -272,7 +272,7 @@ function Contact() {
               type="submit"
               disabled={sending}
             >
-              {sending ? 'Sending Inquiry...' : 'Submit Inquiry'}
+              {sending ? 'Sending Enquiry...' : 'Send an Enquiry'}
             </button>
 
             {status && (
