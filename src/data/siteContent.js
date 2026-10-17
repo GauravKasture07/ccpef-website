@@ -107,7 +107,7 @@ export const about = {
   closingQuote:
     '“Transforming climate anxiety into empowering collective stewardship.”',
   closingText:
-    'Join hands with CCPEF to create tangible ecological.',
+    'Join hands with CCPEF to create tangible ecological impact.',
 };
 
 export const pillars = {
