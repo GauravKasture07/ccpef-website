@@ -31,18 +31,6 @@ function Navbar() {
 
   return (
     <header className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
-      {/* Top contact bar */}
-      <div className="nav__bar">
-        <p className="nav__cin">
-          Section 8 Registered Non-Profit | CIN: {site.cin}
-        </p>
-
-        <div className="nav__meta">
-          <a href={site.emailHref}>{site.email}</a>
-          <span>{site.location}</span>
-        </div>
-      </div>
-
       {/* Main navigation */}
       <div className="nav__main">
         <a

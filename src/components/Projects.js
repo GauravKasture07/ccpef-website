@@ -70,6 +70,16 @@ function Projects() {
                       <li key={point}>{point}</li>
                     ))}
                   </ul>
+                  {item.link && (
+                    <a
+                      className="btn btn--primary"
+                      href={item.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {item.linkLabel || 'Watch now'}
+                    </a>
+                  )}
                 </div>
               )}
             </article>

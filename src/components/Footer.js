@@ -25,7 +25,7 @@ function Footer() {
           <div className="footer__brand">
             <a className="footer__logo" href="#home" aria-label="CCPEF home">
               <img src="/image/web_logo.png" alt="" />
-              <span>CCPEF Pune</span>
+              <span>CCPEF</span>
             </a>
 
             <p className="footer__blurb">{footer.blurb}</p>
@@ -85,16 +85,9 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footer__bottom">
+      <div className="footer__meta footer__meta--singleLine">
+        <p>Section 8 Registered Non-Profit | CIN: {site.cin}</p>
         <p>{site.copyright}</p>
-
-        <div className="footer__contact">
-          <a href={site.emailHref}>{site.email}</a>
-        </div>
-
-        <p className="footer__office">
-          Registered Office: {site.office}
-        </p>
       </div>
     </footer>
   );

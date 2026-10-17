@@ -231,7 +231,7 @@ function Contact() {
                 rows={5}
                 value={form.message}
                 onChange={update}
-                placeholder="Tell us about your organization, location in Pune/MH, and what you'd like to achieve..."
+                placeholder="Tell us about your organization, your location, and what you'd like to achieve..."
                 disabled={sending}
               />
             </label>

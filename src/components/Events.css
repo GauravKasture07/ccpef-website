@@ -125,6 +125,23 @@
   transition: color 0.2s ease;
 }
 
+.event__completed {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(35, 88, 63, 0.12);
+  border-radius: 12px;
+  background: rgba(35, 88, 63, 0.04);
+  color: #3b5d4b;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .event__details-toggle:hover {
   color: #174c2c;
   text-decoration: underline;
@@ -171,11 +188,23 @@
 .event__image {
   display: block;
   width: 100%;
-  max-height: 300px;
+  height: 260px;
   margin-bottom: 1rem;
   border-radius: 16px;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.35s ease;
+}
+
+.event--image-full .event__image {
+  display: block;
+  width: 70%;
+  max-width: 360px;
+  height: auto;
+  max-height: 220px;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+  object-position: center;
 }
 
 .event__image:hover {

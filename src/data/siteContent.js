@@ -4,7 +4,7 @@ export const site = {
   shortName: 'CCPEF',
   tagline: 'Small Actions, Lasting Environmental Impact',
   cin: 'U80900PN2021NPL203043',
-  location: 'Pune, Maharashtra',
+  location: '',
   email: 'ccpenvironmentalfoundation@gmail.com',
   emailHref: 'mailto:ccpenvironmentalfoundation@gmail.com',
   office:
@@ -25,7 +25,7 @@ export const navLinks = [
 
 
 export const hero = {
-  kicker: 'Accelerating Climate Action in Maharashtra',
+  kicker: 'Accelerating Climate Action',
   titleLead: 'Greener Planet Through',
   titleAccent: 'Collective Community Action',
   description:
@@ -43,8 +43,9 @@ export const hero = {
     "Supporting Pune Municipal Corporation in India's first groundwater cell & hill protection.",
   stats: [
     { value: '34+ Yrs', label: 'Civic & Governance Experience' },
-    { value: '100K+', label: 'Ration Kits & Relief Distributed' },
+    { value: '1 Lakh+', label: 'Ration Kits & Relief Distributed' },
     { value: '280+', label: 'Farmers & Agro-Ecology Linkages' },
+    { value: '10K+', label: 'Trees Planted' },
   ],
 };
 
@@ -106,7 +107,7 @@ export const about = {
   closingQuote:
     '“Transforming climate anxiety into empowering collective stewardship.”',
   closingText:
-    'Join hands with CCPEF to create tangible ecological impact across Maharashtra.',
+    'Join hands with CCPEF to create tangible ecological.',
 };
 
 export const pillars = {
@@ -171,7 +172,7 @@ export const pillars = {
     },
     {
       id: 'mobility',
-      image: '/image/community-workshop.jpg',
+      image: '/image/pism.png',
       tags: ['Urban Planning', 'Parisar Collaboration'],
       title: 'Sustainable Mobility & Civic Planning',
       text: 'Conducting comprehensive ward-by-ward mobility surveys and campaigning for pedestrian safety & carbon neutrality.',
@@ -233,21 +234,21 @@ export const projects = {
     'Campaigns, surveys, and multi-stakeholder initiatives driving measurable impact across Pune and Maharashtra.',
   filters: [
     'All',
+    'Climate Emotions',
+    'PMC Cell',
+    'Austin-Pune Sister City',
+    'SDG',
+    'Documentaries',
     'Sustainable Mobility',
-    'Water Security',
-    'Community Engagement',
-    'Mental Health & Climate',
-    'Green Economy & Film',
-    'Education & Youth',
   ],
   items: [
     {
-      category: 'Mental Health & Climate',
+      category: 'Climate Emotions',
       status: 'Active Series',
       partners: 'Mental Health Experts & Youth Groups',
       title: 'Climate Emotions Circles (Eco-Anxiety Support)',
       text: 'A pioneering psychosocial support circle addressing the profound emotional and psychological impact of climate change, heatwaves, and ecological loss on citizens and students.',
-      image: '/image/community-workshop.jpg',
+      image: '/image/picec.jpeg',
       points: [
         'Safe, structured conversational spaces grounded in Buddhist ethics and empathy.',
         'Equipping youth and frontline activists with tools to manage climate burnout and grief.',
@@ -255,12 +256,12 @@ export const projects = {
       period: '2022 - Present',
     },
     {
-      category: 'Water Security',
+      category: 'PMC Cell',
       status: 'Institutional Milestone',
       partners: 'PMC, ACWADAM & Jalshakti Mission',
       title: 'Pune Municipal Groundwater Cell & RWH Liaising',
       text: "Direct collaboration with PMC to operationalize India's first municipal Groundwater Cell and accelerate Rainwater Harvesting across housing societies.",
-      image: '/image/water-conservation.jpg',
+      image: '/image/pgw.jpeg',
       points: [
         'Drafting foundational operational guidelines aligned with National Jalshakti Mission.',
         'Audited 120+ housing societies for rooftop rainwater harvesting feasibility.',
@@ -268,7 +269,7 @@ export const projects = {
       period: '2021 - Present',
     },
     {
-      category: 'Community Engagement',
+      category: 'Austin-Pune Sister City',
       status: 'Proposed opportunity — discussion only',
       partners: 'No Austin partners confirmed',
       title: 'Proposed Texas-Austin and Pune Sister City International Program',
@@ -283,7 +284,7 @@ export const projects = {
       period: 'Proposed',
     },
     {
-      category: 'Education & Youth',
+      category: 'SDG',
       status: 'Active Series',
       partners: 'Universities, MCCIA & Green Economy India',
       title: 'SDG Entrepreneurship & Youth Bootcamps',
@@ -296,12 +297,14 @@ export const projects = {
       period: 'Quarterly Academic Calendar',
     },
     {
-      category: 'Green Economy & Film',
+      category: 'Documentaries',
       status: 'Completed & Screening',
       partners: 'Crowdfunded & Rural Communities',
       title: "Documentary: 'Vinchurniche Gandhi' (Forest Farm)",
       text: 'Produced a documentary on a 98-year-old visionary farmer who transformed 118 acres of barren wasteland into a flourishing biodiverse food forest.',
       image: '/image/vinchurniche_gandhi.png',
+      link: 'https://www.youtube.com/watch?v=Y-_n1DQndVE&t=250s',
+      linkLabel: 'Watch the documentary',
       points: [
         '100% financed through community crowd-funding.',
         'Screened across universities and farming co-operatives to inspire regenerative agriculture.',
@@ -314,25 +317,12 @@ export const projects = {
       partners: 'Parisar & Civic Bodies',
       title: 'Pune Electoral Wards Sustainable Mobility Survey',
       text: 'A city-wide qualitative and quantitative survey across all electoral wards of Pune to document walkability, non-motorized transport safety, and public transit bottlenecks.',
-      image: '/image/community-workshop.jpg',
+      image: '/image/ppewsms.jpeg',
       points: [
         'Extensive data collection across all municipal wards in Pune.',
         'Evidence-backed policy recommendations submitted to PMRDA and PMC traffic authorities.',
       ],
       period: '2023 - Present',
-    },
-    {
-      category: 'Community Engagement',
-      status: 'Recurring Series',
-      partners: 'Citizen Collectives & RWAs',
-      title: 'Climate Baithak & Community Synergies',
-      text: 'Periodic open brainstorming and collaborative meetups bringing together environmentalists, civic officers, students, and citizens to co-create actionable climate solutions.',
-      image: '/image/community-workshop.jpg',
-      points: [
-        'Over 25+ successful Baithaks held across Pune neighbourhoods.',
-        'Formation of local ward-level green task forces for waste segregation and tree plantation.',
-      ],
-      period: 'Ongoing Bi-Monthly',
     },
   ],
 };
@@ -356,6 +346,7 @@ export const leadership = {
   directors: [
     {
       name: 'Vaishali Patkar',
+      image: '/image/profile_pic_vaishali_p.jpg',
       linkedin: 'https://www.linkedin.com/in/vaishali-patkar-01b02611/?isSelfProfile=false',
       role: 'Founder Director',
       summary:
@@ -381,6 +372,7 @@ export const leadership = {
     },
     {
       name: 'Seema Agrawal',
+      image: '/image/profile_pic_seema.jpeg',
       linkedin: 'https://www.linkedin.com/in/seemaagrawalcoach/?isSelfProfile=false',
       role: 'Director',
       summary:
@@ -414,20 +406,37 @@ export const events = {
     '',
   items: [
     {
+      date: 'October 24, 2026',
+      type: 'Community Meetup',
+      status: 'Upcoming',
+      title: 'Pune Climate Baithak #Climate Emotions-TBA',
+      time: '5:00 PM - 7:00 PM IST',
+      place: 'Pune, Maharashtra',
+      facilitator: 'Facilitated by: Seema Agrawal & Certified Facilitators',
+      text: 'A guided, confidential, and supportive sharing circle for youth and activists feeling overwhelmed by climate reports, exploring Buddhist ethics, and building shared resilience.',
+      image: '/image/ueicb.jpeg',
+      tags: ['Mental Health', 'Youth', 'Eco-Resilience'],
+      seats: 'Limited: 30 seats',
+      registerHref:
+        'mailto:ccpenvironmentalfoundation@gmail.com?subject=RSVP%3A%20Pune%20Climate%20Baithak%20%23Climate%20Emotions-TBA',
+    },
+    {
       date: 'March 28, 2026',
       type: 'In-Person Meetup',
+      status: 'Completed',
       title: 'Pune Climate Baithak #26: Urban Heat & Water Action',
       time: '4:00 PM - 6:30 PM IST',
       place: 'Aundh Vikas Mandal Hall, Pune',
       facilitator: 'Facilitated by: Vaishali Patkar & Civic Advisory Team',
       text: 'Join local community leaders, ward representatives, and environmental experts to discuss localized rainwater harvesting and summer heat mitigation strategies for western Pune.',
-      image: '/image/community-workshop.jpg',
+      image: '/image/ppcb26.jpeg',
       tags: ['Groundwater', 'Civic Action', 'Pune Wards'],
-      seats: 'Limited: 45 seats',
+      seats: 'Completed event',
     },
     {
       date: 'April 05, 2026',
       type: 'Reflective Workshop',
+      status: 'Completed',
       title: 'Climate Emotions Circle: Transforming Eco-Anxiety to Action',
       time: '5:30 PM - 7:30 PM IST',
       place: 'Baner Community Space & Hybrid Stream',
@@ -435,11 +444,12 @@ export const events = {
       text: 'A guided, confidential, and supportive sharing circle for youth and activists feeling overwhelmed by climate reports, exploring Buddhist ethics, and building shared resilience.',
       image: '/image/community-workshop.jpg',
       tags: ['Mental Health', 'Youth', 'Eco-Resilience'],
-      seats: 'Limited: 25 seats',
+      seats: 'Completed event',
     },
     {
       date: 'April 18-19, 2026',
       type: 'Campus Workshop',
+      status: 'Completed',
       title: 'Green Economy & Circular Startup Bootcamp (SDG-12 & 13)',
       time: '10:00 AM - 4:00 PM IST',
       place: 'Savitribai Phule Pune University Campus',
@@ -447,11 +457,12 @@ export const events = {
       text: 'An intensive 2-day hands-on bootcamp for college innovators to prototype sustainable business models, upcycled solutions, and decentralized composting enterprises.',
       image: '/image/green-environment.jpg',
       tags: ['Green Jobs', 'Startups', 'Youth'],
-      seats: 'Limited: 80 seats',
+      seats: 'Completed event',
     },
     {
       date: 'May 02, 2026',
       type: 'Technical Seminar',
+      status: 'Completed',
       title: 'Rooftop Rainwater Harvesting: Society Implementation Masterclass',
       time: '10:30 AM - 1:00 PM IST',
       place: 'Bavdhan Community Center, Pune',
@@ -459,7 +470,7 @@ export const events = {
       text: 'Practical engineering, cost estimations, PMC groundwater subsidy guidelines, and maintenance protocols for residential housing society committees.',
       image: '/image/water-conservation.jpg',
       tags: ['RWH', 'Housing Societies', 'PMC Subsidies'],
-      seats: 'Limited: 60 seats',
+      seats: 'Completed event',
     },
   ],
 };

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { events, site } from '../data/siteContent';
+import { events } from '../data/siteContent';
 import Reveal from './Reveal';
 import Section from './Section';
 import './Events.css';
@@ -18,11 +18,15 @@ function Events() {
         {events.items.map((item, index) => (
           <Reveal key={item.title} delay={index * 40}>
             <article
-              className={`event${selectedEvent === item.title ? ' event--expanded' : ''}`}
+              className={`event${selectedEvent === item.title ? ' event--expanded' : ''}${
+                item.title === 'Pune Climate Baithak #Climate Emotions-TBA'
+                  ? ' event--image-full'
+                  : ''
+              }`}
             >
               <div className="event__when">
                 <strong>{item.date}</strong>
-                <span>{item.type}</span>
+                <span>{item.status || item.type}</span>
               </div>
               <div>
                 <h3>{item.title}</h3>
@@ -56,12 +60,16 @@ function Events() {
                 >
                   {selectedEvent === item.title ? 'Hide details' : 'View details'}
                 </button>
-                <a
-                  className="btn btn--primary"
-                  href={`mailto:${site.email}?subject=${encodeURIComponent(`RSVP: ${item.title}`)}`}
-                >
-                  RSVP / Register
-                </a>
+                {item.registerHref ? (
+                  <a
+                    className="btn btn--primary"
+                    href={item.registerHref}
+                  >
+                    RSVP / Register
+                  </a>
+                ) : (
+                  <span className="event__completed">Completed event</span>
+                )}
               </div>
             </article>
           </Reveal>
