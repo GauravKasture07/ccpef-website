@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { hero } from '../data/siteContent';
 import './Hero.css';
 
-const heroSlides = Array.from({ length: 8 }, (_, index) => ({
+const heroSlides = Array.from({ length: 13 }, (_, index) => ({
   image: `/image/hero${index + 1}.jpeg`,
   alt: `Environmental project photo ${index + 1}`,
 }));
