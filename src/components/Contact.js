@@ -151,7 +151,7 @@ function Contact() {
               <a href={site.emailHref}>{site.email}</a>
             </p>
 
-            <h3>Registration &amp; Compliance Details</h3>
+            <h3>Registration Details</h3>
             <ul className="contact__registration">
               {site.registrationDetails.map(({ label, value, date }) => {
                 const dateOnNewLine = [
@@ -208,6 +208,7 @@ function Contact() {
                 autoComplete="name"
                 required
                 maxLength={100}
+                placeholder="Your company username"
                 value={form.name}
                 onChange={update}
                 disabled={sending}
@@ -222,6 +223,7 @@ function Contact() {
                 autoComplete="email"
                 required
                 maxLength={254}
+                placeholder="Your company email"
                 value={form.email}
                 onChange={update}
                 disabled={sending}

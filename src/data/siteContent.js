@@ -16,7 +16,7 @@ export const site = {
   email: 'ccpenvironmentalfoundation@gmail.com',
   emailHref: 'mailto:ccpenvironmentalfoundation@gmail.com',
   office:
-    'B-2-3 Annapurna Ashirwad Society, Survey No. 162/38/112/A, Aundh, Pune 411007, Maharashtra, India',
+    'B-2/3 Annapurna Ashirwad Society, Survey No. 162/38/112/A, Aundh, Pune 411007, Maharashtra, India',
   previousOffice: '',
   copyright: '© 2026 Climate Collective Pune Environmental Foundation. All rights reserved.',
 };
@@ -35,7 +35,7 @@ export const navLinks = [
 export const hero = {
   kicker: 'Accelerating Climate Action',
   titleLead: 'Greener Planet Through',
-  titleAccent: 'Collective Community Action',
+  titleAccent: 'Collective Community\u00a0Action',
   description:
     'Climate Collective Pune Environmental Foundation (CCPEF) is dedicated to systemic change in urban sustainability, groundwater replenishment, hill conservation, and grassroots community empowerment.',
   primaryCta: {
@@ -349,7 +349,7 @@ export const documentary = {
 
 export const leadership = {
   kicker: 'Leadership',
-  title: 'Directors & Leadership Profiles',
+  title: 'Leadership Profiles',
   intro:
     'Backed by over three decades of distinguished leadership spanning local governance, urban planning, FMCG marketing, social entrepreneurship, and environmental advocacy.',
   directors: [
@@ -424,7 +424,6 @@ export const events = {
       facilitator: 'Facilitated by: Seema Agrawal & Certified Facilitators',
       text: 'A guided, confidential, and supportive sharing circle for youth and activists feeling overwhelmed by climate reports, exploring Buddhist ethics, and building shared resilience.',
       image: '/image/ueicb.jpeg',
-      tags: ['Mental Health', 'Youth', 'Eco-Resilience'],
       seats: 'Limited: 30 seats',
       registerHref:
         'mailto:ccpenvironmentalfoundation@gmail.com?subject=RSVP%3A%20Pune%20Climate%20Baithak%20%23Climate%20Emotions-TBA',
@@ -452,7 +451,6 @@ export const events = {
       facilitator: 'Facilitated by: Seema Agrawal & Certified Facilitators',
       text: 'A guided, confidential, and supportive sharing circle for youth and activists feeling overwhelmed by climate reports, exploring Buddhist ethics, and building shared resilience.',
       image: '/image/community-workshop.jpg',
-      tags: ['Mental Health', 'Youth', 'Eco-Resilience'],
       seats: 'Completed event',
     },
     {

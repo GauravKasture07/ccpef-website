@@ -7,8 +7,8 @@
   --mint: #95d5b2;
   --ink: #1c2a22;
   --muted: #4d6358;
-  --serif: 'Fraunces', Georgia, serif;
-  --sans: 'Manrope', 'Segoe UI', sans-serif;
+  --serif: Arial, sans-serif;
+  --sans: Arial, sans-serif;
   --shadow: 0 18px 40px rgba(20, 53, 40, 0.12);
   --radius: 22px;
 }
@@ -53,10 +53,13 @@ textarea {
 
 h1,
 h2,
-h3 {
-  font-family: var(--serif);
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
   line-height: 1.12;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   margin: 0 0 0.7rem;
   color: var(--forest);
 }

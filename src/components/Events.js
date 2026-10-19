@@ -38,11 +38,13 @@ function Events() {
                     <img className="event__image" src={item.image} alt={item.title} />
                     <p className="event__meta">{item.facilitator}</p>
                     <p>{item.text}</p>
-                    <div className="event__tags">
-                      {item.tags.map((tag) => (
-                        <span key={tag}>#{tag}</span>
-                      ))}
-                    </div>
+                    {item.tags?.length > 0 && (
+                      <div className="event__tags">
+                        {item.tags.map((tag) => (
+                          <span key={tag}>#{tag}</span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>

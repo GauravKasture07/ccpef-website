@@ -39,7 +39,7 @@ function Hero() {
           </p>
 
           <h1>
-            {hero.titleLead}{' '}
+            {hero.titleLead}{'\u00a0'}
             <em>{hero.titleAccent}</em>
           </h1>
 
