@@ -8,7 +8,6 @@ const partnerLogoMap = {
   'Pune Metropolitan Region Development Authority (PMRDA)': '/image/pmrda.png',
   'Parisar (Sustainable Mobility)': '/image/parisar.jpg',
   'Mission Groundwater & ACWADAM': '/image/acwadamorg.jpg',
-  'NSRCEL - IIM Bengaluru': '/image/nsrcl.png',
   'Swach & Red Dot Movement': '/image/swach.png',
 };
 

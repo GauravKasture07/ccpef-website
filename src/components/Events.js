@@ -19,7 +19,8 @@ function Events() {
           <Reveal key={item.title} delay={index * 40}>
             <article
               className={`event${selectedEvent === item.title ? ' event--expanded' : ''}${
-                item.title === 'Pune Climate Baithak #Climate Emotions-TBA'
+                item.title ===
+                'Climate Emotions: System Thinking Brain Storming Session'
                   ? ' event--image-full'
                   : ''
               }`}

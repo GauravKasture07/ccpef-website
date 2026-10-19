@@ -86,6 +86,7 @@ function Footer() {
       </div>
 
       <div className="footer__meta footer__meta--singleLine">
+        <p>Section 8 Registered Non-Profit </p>
         <p>{site.copyright}</p>
       </div>
     </footer>

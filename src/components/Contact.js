@@ -146,7 +146,7 @@ function Contact() {
             <p>{site.office}</p>
             {site.previousOffice && <p>{site.previousOffice}</p>}
 
-            <h3>Official Email Address</h3>
+            <h3> Email Address</h3>
             <p>
               <a href={site.emailHref}>{site.email}</a>
             </p>
