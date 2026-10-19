@@ -69,6 +69,23 @@
   margin-bottom: 1rem;
 }
 
+.contact__registration {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.35rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  color: var(--muted, #68776d);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  list-style: none;
+}
+
+.contact__registration strong {
+  color: var(--text, #183c2c);
+}
+
 .contact__details a {
   color: var(--forest, #285d3c);
   font-weight: 600;

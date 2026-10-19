@@ -15,14 +15,14 @@ const emailJsConfig = {
 const socialLinks = [
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/',
+    href: 'https://www.linkedin.com/company/climate-environment-foundation/',
     icon: (
       <path d="M5.2 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.3 9.4h3.8v11.3H3.3V9.4Zm6.1 0H13v1.5h.1a4.1 4.1 0 0 1 3.7-2c4 0 4.7 2.6 4.7 5.9v5.9h-3.8v-5.2c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9v5.3H9.4V9.4Z" />
     ),
   },
   {
     name: 'Instagram',
-    href: 'https://www.instagram.com/',
+    href: 'https://www.instagram.com/climate.emotions_ccpef/',
     icon: (
       <>
         <rect
@@ -49,7 +49,7 @@ const socialLinks = [
   },
   {
     name: 'YouTube',
-    href: 'https://www.youtube.com/',
+    href: 'https://www.youtube.com/@ClimateEmotions_CCPEF',
     icon: (
       <>
         <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z" />
@@ -151,6 +151,31 @@ function Contact() {
               <a href={site.emailHref}>{site.email}</a>
             </p>
 
+            <h3>Registration &amp; Compliance Details</h3>
+            <ul className="contact__registration">
+              {site.registrationDetails.map(({ label, value, date }) => {
+                const dateOnNewLine = [
+                  'MCA Date of Incorporation/CIN',
+                  '80G Unique Registration Number',
+                ].includes(label.trim());
+
+                return (
+                  <li key={label}>
+                    <strong>{label}:</strong> {value}
+                    {date &&
+                      (dateOnNewLine ? (
+                        <>
+                          <br />
+                          Date: {date}
+                        </>
+                      ) : (
+                        <> | Date: {date}</>
+                      ))}
+                  </li>
+                );
+              })}
+            </ul>
+
             <div className="contact__socials" aria-label="Social media links">
               {socialLinks.map((social) => (
                 <a
@@ -185,7 +210,6 @@ function Contact() {
                 maxLength={100}
                 value={form.name}
                 onChange={update}
-                placeholder="e.g. Rahul Deshmukh"
                 disabled={sending}
               />
             </label>
@@ -200,7 +224,6 @@ function Contact() {
                 maxLength={254}
                 value={form.email}
                 onChange={update}
-                placeholder="name@example.com"
                 disabled={sending}
               />
             </label>

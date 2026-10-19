@@ -3,7 +3,15 @@ export const site = {
   fullName: 'Climate Collective Pune Environmental Foundation',
   shortName: 'CCPEF',
   tagline: 'Small Actions, Lasting Environmental Impact',
-  cin: 'U80900PN2021NPL203043',
+  cin: 'U80900PNPL203043',
+  registrationDetails: [
+    { label: 'MCA Date of Incorporation/CIN', value: 'U80900PNPL203043', date: '29/07/2021'},
+    { label: 'NITI AayogDarpan ID ', value: 'MH/2022/0305319', date: '04/05/2022' },
+    { label: 'CSR1 Regn No', value: 'CSR00109260', date: '06/04/2026' },
+    { label: 'PAN ', value: 'AAJCC6605R' },
+    { label: '12AB', value: 'AAJCC6605R25PN01', date: '24/06/2026' },
+    { label: '80G Unique Registration Number ', value: 'AAJCC6605R25PN02 ', date: '24/06/2026' },
+  ],
   location: '',
   email: 'ccpenvironmentalfoundation@gmail.com',
   emailHref: 'mailto:ccpenvironmentalfoundation@gmail.com',
@@ -246,8 +254,8 @@ export const projects = {
       category: 'Climate Emotions',
       status: 'Active Series',
       partners: 'Mental Health Experts & Youth Groups',
-      title: 'Climate Emotions Circles (Eco-Anxiety Support)',
-      text: 'A pioneering psychosocial support circle addressing the profound emotional and psychological impact of climate change, heatwaves, and ecological loss on citizens and students.',
+      title: 'Climate Emotions',
+      text: 'An initiative integrating ecology and psychology to understand the emotional impact of climate change and ecological loss, transforming community voices into collective climate action and informed public policy.',
       image: '/image/picec.jpeg',
       points: [
         'Safe, structured conversational spaces grounded in Buddhist ethics and empathy.',
@@ -270,18 +278,19 @@ export const projects = {
     },
     {
       category: 'Austin-Pune Sister City',
-      status: 'Proposed opportunity — discussion only',
-      partners: 'No Austin partners confirmed',
-      title: 'Proposed Texas-Austin and Pune Sister City International Program',
-      text: 'A proposed conversation on community-led climate engagement and how residents’ experiences can inform inclusive climate resilience. No partnership, endorsement, funding, or activity is confirmed.',
+      status: 'Key Facilitator ',
+      partners: 'Convenor',
+      title: 'Key Facilitator Texas-Austin and Pune Sister City International Program',
+      text: 'Since 2016 our Founder has been actively involved in initiating dialogue and advancing the Austin–Pune sister city relationship, with a vision of fostering meaningful collaboration between communities and institutions on climate action and sustainable urban development.',
       image: '/image/Texas_austin_image.jpeg',
       points: [
-        'Peer dialogue on community listening and climate engagement.',
-        'Potential youth and university learning or research collaboration.',
-        'Cross-city discussion of community priorities and climate resilience.',
-        'Possible joint learning brief, subject to mutual agreement on scope and review.',
+        'Knowledge Exchange: Facilitating the sharing of knowledge, experiences and innovative solutions between Austin and Pune.',
+        'Climate Action & Sustainability: Exploring collaborative opportunities in climate action, water security and sustainable urban development.',
+        'Community Engagement & Climate Education: Strengthening connections between communities and institutions to promote awareness, participation and collective action.',
+        'Stakeholder Collaboration: Connecting communities, institutions and city stakeholders to encourage dialogue and meaningful partnerships.',
+        'Locally Relevant Solutions: Fostering collaborative initiatives that address local challenges and contribute to a greener, more sustainable future.',
       ],
-      period: 'Proposed',
+      period: '2016-Present',
     },
     {
       category: 'SDG',
@@ -401,7 +410,7 @@ export const leadership = {
 
 export const events = {
   kicker: 'Events',
-  title: 'Upcoming Events',
+  title: '',
   intro:
     '',
   items: [
@@ -503,7 +512,7 @@ export const faqs = [
   {
     question: 'Is CCPEF a legally registered NGO in India?',
     answer:
-      'Yes. Climate Collective Pune Environmental Foundation is a registered Section 8 Non-Profit Company under the Ministry of Corporate Affairs, Government of India (CIN: U80900PN2021NPL203043), established in 2021.',
+      'Yes. Climate Collective Pune Environmental Foundation is a registered Section 8 Non-Profit Company under the Ministry of Corporate Affairs, Government of India (CIN: U80900PNPL203043), established in 2021.',
   },
   {
     question: 'How can my housing society implement Rainwater Harvesting with CCPEF?',
