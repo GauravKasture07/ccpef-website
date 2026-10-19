@@ -146,7 +146,7 @@ function Contact() {
             <p>{site.office}</p>
             {site.previousOffice && <p>{site.previousOffice}</p>}
 
-            <h3>Official Email</h3>
+            <h3>Official Email Address</h3>
             <p>
               <a href={site.emailHref}>{site.email}</a>
             </p>
@@ -208,7 +208,7 @@ function Contact() {
                 autoComplete="name"
                 required
                 maxLength={100}
-                placeholder="Your company username"
+                placeholder="Your/Company Name"
                 value={form.name}
                 onChange={update}
                 disabled={sending}
@@ -223,7 +223,7 @@ function Contact() {
                 autoComplete="email"
                 required
                 maxLength={254}
-                placeholder="Your company email"
+                placeholder="Your/Company Email"
                 value={form.email}
                 onChange={update}
                 disabled={sending}
