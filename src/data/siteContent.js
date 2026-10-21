@@ -3,15 +3,6 @@ export const site = {
   fullName: 'Climate Collective Pune Environmental Foundation',
   shortName: 'CCPEF',
   tagline: 'Small Actions, Lasting Environmental Impact',
-  cin: 'U80900PNPL203043',
-  registrationDetails: [
-    { label: 'MCA Date of Incorporation/CIN', value: 'U80900PNPL203043', date: '29/07/2021'},
-    { label: 'NITI AayogDarpan ID ', value: 'MH/2022/0305319', date: '04/05/2022' },
-    { label: 'CSR1 Regn No', value: 'CSR00109260', date: '06/04/2026' },
-    { label: 'PAN ', value: 'AAJCC6605R' },
-    { label: '12AB', value: 'AAJCC6605R25PN01', date: '24/06/2026' },
-    { label: '80G Unique Registration Number ', value: 'AAJCC6605R25PN02 ', date: '24/06/2026' },
-  ],
   location: '',
   email: 'ccpenvironmentalfoundation@gmail.com',
   emailHref: 'mailto:ccpenvironmentalfoundation@gmail.com',
@@ -128,7 +119,7 @@ export const pillars = {
       image: '/image/pigaws.webp',
       tags: ['Conservation', 'Jalshakti Mission Aligned'],
       title: 'Groundwater & Water Security',
-      text: "Pioneering community-level rainwater harvesting, aquifer mapping, and Pune's first Municipal Groundwater Cell.",
+      text: "India’s first Groundwater Cell in PMC and managed aquifer recharge initiatives.",
       metrics: [
         { value: '50+', label: 'Community Workshops' },
         { value: "India's 1st PMC Cell", label: 'Aquifer Cells Supported' },
@@ -469,7 +460,7 @@ export const faqs = [
   {
     question: 'Is CCPEF a legally registered NGO in India?',
     answer:
-      'Yes. Climate Collective Pune Environmental Foundation is a registered Section 8 Non-Profit Company under the Ministry of Corporate Affairs, Government of India (CIN: U80900PNPL203043), established in 2021.',
+      'Yes. Climate Collective Pune Environmental Foundation is a registered Section 8 Non-Profit Company under the Ministry of Corporate Affairs, Government of India, established in 2021.',
   },
   {
     question: 'How can my housing society implement Rainwater Harvesting with CCPEF?',

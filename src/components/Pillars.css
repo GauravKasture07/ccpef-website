@@ -188,7 +188,7 @@
 .pillar-dialog__image {
   display: block;
   width: 100%;
-  height: clamp(190px, 35vh, 300px);
+  height: clamp(280px, 50vh, 460px);
   object-fit: cover;
 }
 

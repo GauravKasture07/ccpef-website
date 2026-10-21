@@ -151,31 +151,6 @@ function Contact() {
               <a href={site.emailHref}>{site.email}</a>
             </p>
 
-            <h3>Registration Details</h3>
-            <ul className="contact__registration">
-              {site.registrationDetails.map(({ label, value, date }) => {
-                const dateOnNewLine = [
-                  'MCA Date of Incorporation/CIN',
-                  '80G Unique Registration Number',
-                ].includes(label.trim());
-
-                return (
-                  <li key={label}>
-                    <strong>{label}:</strong> {value}
-                    {date &&
-                      (dateOnNewLine ? (
-                        <>
-                          <br />
-                          Date: {date}
-                        </>
-                      ) : (
-                        <> | Date: {date}</>
-                      ))}
-                  </li>
-                );
-              })}
-            </ul>
-
             <div className="contact__socials" aria-label="Social media links">
               {socialLinks.map((social) => (
                 <a
