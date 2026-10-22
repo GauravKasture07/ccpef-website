@@ -119,7 +119,7 @@ export const pillars = {
       image: '/image/pigaws.webp',
       tags: ['Conservation', 'Jalshakti Mission Aligned'],
       title: 'Groundwater & Water Security',
-      text: "India’s first Groundwater Cell in PMC and managed aquifer recharge initiatives.",
+      text: "Established India's First Groundwater Cell in PMC and Managed Aquifer Recharge Initiatives.",
       metrics: [
         { value: '50+', label: 'Community Workshops' },
         { value: "India's 1st PMC Cell", label: 'Aquifer Cells Supported' },
