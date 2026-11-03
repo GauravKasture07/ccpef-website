@@ -4,8 +4,8 @@ export const site = {
   shortName: 'CCPEF',
   tagline: 'Small Actions, Lasting Environmental Impact',
   location: '',
-  email: 'ccpenvironmentalfoundation@gmail.com',
-  emailHref: 'mailto:ccpenvironmentalfoundation@gmail.com',
+  email: 'contact@ccpef.in',
+  emailHref: 'mailto:contact@ccpef.in',
   office:
     'B-2/3 Annapurna Ashirwad Society, Survey No. 162/38/112/A, Aundh, Pune 411007, Maharashtra, India',
   previousOffice: '',
