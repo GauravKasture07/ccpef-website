@@ -194,7 +194,7 @@
   width: 100%;
   max-height: 280px;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   background: var(--mist, #edf3e9);
   border-radius: 16px;
 }

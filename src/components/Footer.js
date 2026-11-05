@@ -1,21 +1,69 @@
 
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { footer, site } from '../data/siteContent';
 import './Footer.css';
 
+const emailJsConfig = {
+  serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+  templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+  publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+};
+
 function Footer() {
   const [email, setEmail] = useState('');
+  const [sending, setSending] = useState(false);
+  const [status, setStatus] = useState('');
+  const [statusType, setStatusType] = useState('');
 
-  const subscribe = (event) => {
+  const subscribe = async (event) => {
     event.preventDefault();
 
-    const subject = encodeURIComponent('Subscribe to CCPEF updates');
-    const body = encodeURIComponent(
-      `Please add ${email.trim()} to updates on Climate Baithaks, RWH workshops, and eco-initiatives.`
-    );
+    if (sending) return;
 
-    window.location.href =
-      `mailto:${site.email}?subject=${subject}&body=${body}`;
+    if (
+      !emailJsConfig.serviceId ||
+      !emailJsConfig.templateId ||
+      !emailJsConfig.publicKey
+    ) {
+      setStatus(
+        'Email is not configured yet. Add the REACT_APP_EMAILJS settings to the project root .env file and restart the app.'
+      );
+      setStatusType('error');
+      return;
+    }
+
+    setSending(true);
+    setStatus('');
+    setStatusType('');
+
+    try {
+      await emailjs.send(
+        emailJsConfig.serviceId,
+        emailJsConfig.templateId,
+        {
+          to_email: 'contact@ccpef.in',
+          name: 'Newsletter subscriber',
+          email: email.trim(),
+          interest: 'Newsletter subscription',
+          message:
+            'Please add this email address to updates on Climate Baithaks, RWH workshops, and eco-initiatives.',
+        },
+        {
+          publicKey: emailJsConfig.publicKey,
+        }
+      );
+
+      setStatus('Thank you! Your subscription request has been sent.');
+      setStatusType('success');
+      setEmail('');
+    } catch (error) {
+      console.error('EmailJS subscription failed:', error);
+      setStatus('Sorry, we could not send your subscription. Please try again.');
+      setStatusType('error');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -71,12 +119,28 @@ function Footer() {
                 placeholder="Your email address"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
+                disabled={sending}
               />
 
-              <button className="footer__subscribe-btn" type="submit">
-                Subscribe <span aria-hidden="true">↗</span>
+              <button
+                className="footer__subscribe-btn"
+                type="submit"
+                disabled={sending}
+              >
+                {sending ? 'Sending...' : 'Subscribe'}{' '}
+                <span aria-hidden="true">↗</span>
               </button>
             </form>
+
+            {status && (
+              <p
+                className={`footer__status footer__status--${statusType}`}
+                role="status"
+                aria-live="polite"
+              >
+                {status}
+              </p>
+            )}
 
             <p className="footer__note">
               Stay informed. Stay involved.
