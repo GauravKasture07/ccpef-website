@@ -107,7 +107,6 @@ function Contact() {
         emailJsConfig.serviceId,
         emailJsConfig.templateId,
         {
-          to_email: site.email,
           name: form.name.trim(),
           email: form.email.trim(),
           interest: form.interest,
