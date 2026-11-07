@@ -42,7 +42,6 @@ function Footer() {
         emailJsConfig.serviceId,
         emailJsConfig.templateId,
         {
-          to_email: 'contact@ccpef.in',
           name: 'Newsletter subscriber',
           email: email.trim(),
           interest: 'Newsletter subscription',
